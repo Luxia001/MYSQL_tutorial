@@ -1,0 +1,686 @@
+{
+    "type": "MySQLNotebook",
+    "version": "1.0",
+    "caption": "DB Notebook",
+    "content": "CREATE TABLE people (\n    name VARCHAR(100),\n    birthdate DATE,\n    birthtime TIME,\n    birthdt DATETIME\n);\nDESC people;\nINSERT INTO people (name,birthdate,birthtime,birthdt) \nVALUE ('Elton','2000-12-25','11:00:00','2000-12-25 11:00:00'),\n('LUlu','1985-04-11','9:45:10','1985-04-11 9:45:10'),\n('Juan','2020-08-15','23:59:00','2020-08-15 23:59:00');\n\nDELETE FROM people ;\nSELECT * FROM people;\nINSERT INTO people (name,birthdate,birthtime,birthdt) VALUE ('Hazel',curdate(),curtime(),now());\nSELECT name,DAYNAME(birthdate),day(birthdate),MONTHNAME(birthdate),year(birthdate),birthdate,date_format(birthdate,'%a/%b/%d')as 'date format' FROM people;\nSELECT birthdate,DATE_ADD(curdate(),interval 1 YEAR),DATEDIFF(curdate(),birthdate) FROM people;\n-- exam\nSELECT DATE_FORMAT(now(),'%M %D at %k:%i'),DATE_FORMAT(now(),'%m/%d/%Y'),DAYOFWEEK(CURTIME()),CURTIME(),curDate();\nCREATE TABLE tweets\n(content varchar(180),\nusername VARCHAR(180),\ncreateTime TIMESTAMP DEFAULT CURRENT_TIMESTAMP\n);\nINSERT into tweets(content,username) \nVALUES ('mhee','mhee');\nSELECT * FROM tweets;\nDROP TABLE tweets;",
+    "options": {
+        "tabSize": 4,
+        "insertSpaces": true,
+        "indentSize": 4,
+        "defaultEOL": "CRLF",
+        "trimAutoWhitespace": true
+    },
+    "viewState": {
+        "cursorState": [
+            {
+                "inSelectionMode": false,
+                "selectionStart": {
+                    "lineNumber": 19,
+                    "column": 115
+                },
+                "position": {
+                    "lineNumber": 19,
+                    "column": 115
+                }
+            }
+        ],
+        "viewState": {
+            "scrollLeft": 0,
+            "firstPosition": {
+                "lineNumber": 20,
+                "column": 1
+            },
+            "firstPositionDeltaTop": 350
+        },
+        "contributionsState": {
+            "editor.contrib.folding": {},
+            "editor.contrib.wordHighlighter": false
+        }
+    },
+    "contexts": [
+        {
+            "state": {
+                "start": 1,
+                "end": 6,
+                "language": "mysql",
+                "result": {
+                    "type": "text",
+                    "text": [
+                        {
+                            "type": 0,
+                            "index": 0,
+                            "content": "MySQL Error (1046): No database selected",
+                            "language": "ansi"
+                        }
+                    ],
+                    "executionInfo": {
+                        "text": ""
+                    }
+                },
+                "currentHeight": 28,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 108
+                        },
+                        "contentStart": 0,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 108,
+                            "length": 0
+                        },
+                        "contentStart": 107,
+                        "state": 3
+                    }
+                ]
+            },
+            "data": []
+        },
+        {
+            "state": {
+                "start": 7,
+                "end": 7,
+                "language": "mysql",
+                "result": {
+                    "type": "text",
+                    "text": [
+                        {
+                            "type": 0,
+                            "index": 0,
+                            "content": "MySQL Error (1046): No database selected",
+                            "language": "ansi"
+                        }
+                    ],
+                    "executionInfo": {
+                        "text": ""
+                    }
+                },
+                "currentHeight": 28,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 12
+                        },
+                        "contentStart": 1,
+                        "state": 0
+                    }
+                ]
+            },
+            "data": []
+        },
+        {
+            "state": {
+                "start": 8,
+                "end": 12,
+                "language": "mysql",
+                "result": {
+                    "type": "text",
+                    "text": [
+                        {
+                            "type": 4,
+                            "index": 0,
+                            "resultId": "8f00a2d2-5c6b-4056-cb68-3f7cb5206a1f",
+                            "content": "OK, 3 rows affected in 4.133ms"
+                        }
+                    ]
+                },
+                "currentHeight": 28,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 227
+                        },
+                        "contentStart": 0,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 227,
+                            "length": 1
+                        },
+                        "contentStart": 226,
+                        "state": 3
+                    }
+                ]
+            },
+            "data": []
+        },
+        {
+            "state": {
+                "start": 13,
+                "end": 13,
+                "language": "mysql",
+                "result": {
+                    "type": "text",
+                    "text": [
+                        {
+                            "type": 4,
+                            "index": 0,
+                            "resultId": "9f3fefec-eaaa-42b0-f96a-b0a5a295d4c9",
+                            "content": "OK, 3 rows affected in 4.233ms"
+                        }
+                    ]
+                },
+                "currentHeight": 28,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 20
+                        },
+                        "contentStart": 1,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 20,
+                            "length": 0
+                        },
+                        "contentStart": 19,
+                        "state": 3
+                    }
+                ]
+            },
+            "data": []
+        },
+        {
+            "state": {
+                "start": 14,
+                "end": 14,
+                "language": "mysql",
+                "result": {
+                    "type": "text",
+                    "text": [
+                        {
+                            "type": 0,
+                            "index": 0,
+                            "content": "MySQL Error (1046): No database selected",
+                            "language": "ansi"
+                        }
+                    ],
+                    "executionInfo": {
+                        "text": ""
+                    }
+                },
+                "currentHeight": 28,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 21
+                        },
+                        "contentStart": 0,
+                        "state": 0
+                    }
+                ]
+            },
+            "data": []
+        },
+        {
+            "state": {
+                "start": 15,
+                "end": 15,
+                "language": "mysql",
+                "result": {
+                    "type": "text",
+                    "executionInfo": {
+                        "text": "OK, 1 row affected in 2.932ms",
+                        "type": 4
+                    },
+                    "text": [
+                        {
+                            "type": 3,
+                            "content": "+\n"
+                        }
+                    ]
+                },
+                "currentHeight": 28,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 96
+                        },
+                        "contentStart": 0,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 96,
+                            "length": 0
+                        },
+                        "contentStart": 97,
+                        "state": 0
+                    }
+                ]
+            },
+            "data": []
+        },
+        {
+            "state": {
+                "start": 16,
+                "end": 16,
+                "language": "mysql",
+                "result": {
+                    "type": "text",
+                    "text": [
+                        {
+                            "type": 0,
+                            "index": 0,
+                            "content": "MySQL Error (1046): No database selected",
+                            "language": "ansi"
+                        }
+                    ],
+                    "executionInfo": {
+                        "text": ""
+                    }
+                },
+                "currentHeight": 36,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 155
+                        },
+                        "contentStart": 0,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 155,
+                            "length": 1
+                        },
+                        "contentStart": 154,
+                        "state": 3
+                    }
+                ]
+            },
+            "data": []
+        },
+        {
+            "state": {
+                "start": 17,
+                "end": 17,
+                "language": "mysql",
+                "result": {
+                    "type": "resultIds",
+                    "list": [
+                        "7646492c-814a-47ca-ea20-1f2e266e6002"
+                    ]
+                },
+                "currentHeight": 36,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 95
+                        },
+                        "contentStart": 0,
+                        "state": 0
+                    }
+                ]
+            },
+            "data": [
+                {
+                    "tabId": "a3c44656-87a0-41d5-fe6a-3e1cf536e36f",
+                    "resultId": "7646492c-814a-47ca-ea20-1f2e266e6002",
+                    "rows": [
+                        {
+                            "0": "2000-12-25",
+                            "1": "2025-12-11",
+                            "2": 8752
+                        },
+                        {
+                            "0": "1985-04-11",
+                            "1": "2025-12-11",
+                            "2": 14489
+                        },
+                        {
+                            "0": "2020-08-15",
+                            "1": "2025-12-11",
+                            "2": 1579
+                        },
+                        {
+                            "0": "2024-12-11",
+                            "1": "2025-12-11",
+                            "2": 0
+                        }
+                    ],
+                    "columns": [
+                        {
+                            "title": "birthdate",
+                            "field": "0",
+                            "dataType": {
+                                "type": 27,
+                                "needsQuotes": true
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "DATE_ADD(curdate(),interval 1 YEAR)",
+                            "field": "1",
+                            "dataType": {
+                                "type": 27,
+                                "needsQuotes": true
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "DATEDIFF(curdate(),birthdate)",
+                            "field": "2",
+                            "dataType": {
+                                "type": 3,
+                                "flags": [
+                                    "UNSIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 8,
+                                "parameterFormatType": "OneOrZero",
+                                "synonyms": [
+                                    "INT3",
+                                    "MIDDLEINT"
+                                ]
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        }
+                    ],
+                    "executionInfo": {
+                        "text": "OK, 4 records retrieved in 1.002ms"
+                    },
+                    "totalRowCount": 4,
+                    "hasMoreRows": false,
+                    "currentPage": 0,
+                    "index": 0,
+                    "sql": "SELECT birthdate,DATE_ADD(curdate(),interval 1 YEAR),DATEDIFF(curdate(),birthdate) FROM people",
+                    "updatable": false,
+                    "fullTableName": ""
+                }
+            ]
+        },
+        {
+            "state": {
+                "start": 18,
+                "end": 19,
+                "language": "mysql",
+                "result": {
+                    "type": "resultIds",
+                    "list": [
+                        "6ec6d1ce-31b3-43c8-feca-6e092b423105"
+                    ]
+                },
+                "currentHeight": 352,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 122
+                        },
+                        "contentStart": 8,
+                        "state": 0
+                    }
+                ]
+            },
+            "data": [
+                {
+                    "tabId": "a3c44656-87a0-41d5-fe6a-3e1cf536e36f",
+                    "resultId": "6ec6d1ce-31b3-43c8-feca-6e092b423105",
+                    "rows": [
+                        {
+                            "0": "December 11th at 2:05",
+                            "1": "12/11/2024",
+                            "2": 4,
+                            "3": "02:05:23",
+                            "4": "2024-12-11"
+                        }
+                    ],
+                    "columns": [
+                        {
+                            "title": "DATE_FORMAT(now(),'%M %D at %k:%i')",
+                            "field": "0",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "DATE_FORMAT(now(),'%m/%d/%Y')",
+                            "field": "1",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "DAYOFWEEK(CURTIME())",
+                            "field": "2",
+                            "dataType": {
+                                "type": 4,
+                                "flags": [
+                                    "SIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 10,
+                                "parameterFormatType": "OneOrZero",
+                                "synonyms": [
+                                    "INTEGER",
+                                    "INT4"
+                                ]
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "CURTIME()",
+                            "field": "3",
+                            "dataType": {
+                                "type": 28,
+                                "dateTimePrecision": 3,
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "curDate()",
+                            "field": "4",
+                            "dataType": {
+                                "type": 27,
+                                "needsQuotes": true
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        }
+                    ],
+                    "executionInfo": {
+                        "text": "OK, 1 record retrieved in 0.998ms"
+                    },
+                    "totalRowCount": 1,
+                    "hasMoreRows": false,
+                    "currentPage": 0,
+                    "index": 0,
+                    "sql": "-- exam\nSELECT DATE_FORMAT(now(),'%M %D at %k:%i'),DATE_FORMAT(now(),'%m/%d/%Y'),DAYOFWEEK(CURTIME()),CURTIME(),curDate()",
+                    "updatable": false,
+                    "fullTableName": ""
+                }
+            ]
+        },
+        {
+            "state": {
+                "start": 20,
+                "end": 24,
+                "language": "mysql",
+                "result": {
+                    "type": "text",
+                    "text": [
+                        {
+                            "type": 0,
+                            "index": 0,
+                            "content": "MySQL Error (1050): Table 'tweets' already exists",
+                            "language": "ansi"
+                        }
+                    ],
+                    "executionInfo": {
+                        "text": ""
+                    }
+                },
+                "currentHeight": 32,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 115
+                        },
+                        "contentStart": 0,
+                        "state": 0
+                    }
+                ]
+            },
+            "data": []
+        },
+        {
+            "state": {
+                "start": 25,
+                "end": 26,
+                "language": "mysql",
+                "result": {
+                    "type": "text",
+                    "text": [
+                        {
+                            "type": 4,
+                            "index": 0,
+                            "resultId": "b761e1ae-8010-40a5-ce3f-5eeea878dcf7",
+                            "content": "OK, 1 row affected in 3.214ms"
+                        }
+                    ]
+                },
+                "currentHeight": 32,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 61
+                        },
+                        "contentStart": 0,
+                        "state": 0
+                    }
+                ]
+            },
+            "data": []
+        },
+        {
+            "state": {
+                "start": 27,
+                "end": 27,
+                "language": "mysql",
+                "result": {
+                    "type": "text",
+                    "executionInfo": {
+                        "text": "OK, 1 record retrieved in 0.904ms"
+                    },
+                    "text": [
+                        {
+                            "type": 3,
+                            "content": "sql> SELECT * FROM tweets LIMIT 0, 1001;\n+---------+----------+---------------------+\n| content | username | createTime          |\n+---------+----------+---------------------+\n| mhee    | mhee     | 2024-12-11 02:01:23 |\n+---------+----------+---------------------+\n"
+                        }
+                    ]
+                },
+                "currentHeight": 180,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 21
+                        },
+                        "contentStart": 0,
+                        "state": 0
+                    }
+                ]
+            },
+            "data": []
+        },
+        {
+            "state": {
+                "start": 28,
+                "end": 28,
+                "language": "mysql",
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 18
+                        },
+                        "contentStart": 1,
+                        "state": 0
+                    }
+                ]
+            },
+            "data": []
+        }
+    ]
+}

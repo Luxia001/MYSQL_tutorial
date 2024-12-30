@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>JOIN US</title>
+    <link
+      rel="stylesheet"
+      href="/home.css"
+    />
+  </head>
+  <body>
+    <h1 class="header">JOIN US</h1>
+    <p>
+      Enter your email to join
+      <strong><%= data %></strong>
+    </p>
+    <form
+      method="POST"
+      action="/register"
+    >
+      <input
+        type="email"
+        class="form"
+        name="email"
+        placeholder="Enter your email"
+        required
+      />
+      <button type="submit">Join</button>
+    </form>
+
+    <h2 class="header">Registered Emails</h2>
+    <ul>
+      <% emails.forEach((email) => { %>
+      <li><%= email.email %></li>
+      <% }) %>
+    </ul>
+  </body>
+</html>

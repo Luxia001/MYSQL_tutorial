@@ -1,0 +1,141 @@
+{
+    "type": "MySQLNotebook",
+    "version": "1.0",
+    "caption": "Script",
+    "content": "show DATABASES;\n",
+    "options": {
+        "tabSize": 4,
+        "indentSize": 4,
+        "insertSpaces": true,
+        "defaultEOL": "LF",
+        "trimAutoWhitespace": true
+    },
+    "viewState": {
+        "cursorState": [
+            {
+                "inSelectionMode": false,
+                "selectionStart": {
+                    "lineNumber": 1,
+                    "column": 1
+                },
+                "position": {
+                    "lineNumber": 1,
+                    "column": 1
+                }
+            }
+        ],
+        "viewState": {
+            "scrollLeft": 0,
+            "firstPosition": {
+                "lineNumber": 1,
+                "column": 1
+            },
+            "firstPositionDeltaTop": 0
+        },
+        "contributionsState": {
+            "editor.contrib.folding": {},
+            "editor.contrib.wordHighlighter": false
+        }
+    },
+    "contexts": [
+        {
+            "state": {
+                "start": 1,
+                "end": 2,
+                "language": "mysql",
+                "result": {
+                    "type": "resultIds",
+                    "list": [
+                        "0880a5f9-27bf-4e2a-e063-e969d5d1ecab"
+                    ]
+                },
+                "currentHeight": 300,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 15
+                        },
+                        "contentStart": 0,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 15,
+                            "length": 1
+                        },
+                        "contentStart": 14,
+                        "state": 3
+                    }
+                ]
+            },
+            "data": [
+                {
+                    "tabId": "c43b7aff-cd71-46e6-beb9-06272c3cbf84",
+                    "resultId": "0880a5f9-27bf-4e2a-e063-e969d5d1ecab",
+                    "rows": [
+                        {
+                            "0": "book_shop"
+                        },
+                        {
+                            "0": "information_schema"
+                        },
+                        {
+                            "0": "mysql"
+                        },
+                        {
+                            "0": "performance_schema"
+                        },
+                        {
+                            "0": "pet_shop"
+                        },
+                        {
+                            "0": "sakila"
+                        },
+                        {
+                            "0": "shirts_db"
+                        },
+                        {
+                            "0": "sys"
+                        },
+                        {
+                            "0": "world"
+                        }
+                    ],
+                    "columns": [
+                        {
+                            "title": "Database",
+                            "field": "0",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        }
+                    ],
+                    "executionInfo": {
+                        "text": "OK, 9 records retrieved in 1.008ms"
+                    },
+                    "totalRowCount": 9,
+                    "hasMoreRows": false,
+                    "currentPage": 0,
+                    "index": 0,
+                    "sql": "show DATABASES",
+                    "updatable": false
+                }
+            ]
+        }
+    ]
+}

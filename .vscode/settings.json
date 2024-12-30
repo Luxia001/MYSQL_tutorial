@@ -1,0 +1,46 @@
+{
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "default",
+        "enableSsl": "Disabled"
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 3306,
+      "driver": "MySQL",
+      "username": "root",
+      "name": "root",
+      "database": "a"
+    },
+    {
+      "mysqlOptions": {
+        "authProtocol": "default",
+        "enableSsl": "Disabled"
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 3306,
+      "driver": "MySQL",
+      "password": "12345678",
+      "name": "Udemy",
+      "database": "demo",
+      "username": "root"
+    },
+    {
+      "mysqlOptions": {
+        "authProtocol": "default",
+        "enableSsl": "Disabled"
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 3306,
+      "driver": "MySQL",
+      "password": "12345678",
+      "name": "udemyMYSQL",
+      "group": "Udemy",
+      "username": "root",
+      "database": "book_shop"
+    }
+  ]
+}
